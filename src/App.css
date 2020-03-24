@@ -46,18 +46,16 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-  background: rgba(255, 255, 255, 0.1);
   border: none;
   font-size: 16px;
   height: auto;
-  margin: 0;
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #e8eeef;
+  background: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 input[type="radio"],
@@ -81,7 +79,6 @@ button {
   border-radius: 5px;
   width: 100%;
   border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
 }
@@ -138,8 +135,8 @@ a {
   background: #f26964;
   font-size: 1.2em;
   color: #fff !important;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 3px 0px #c1524e;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 #c1524e;
 }
 
 .btn:active {
@@ -152,7 +149,7 @@ a {
   width: 49%;
   margin-top: 15px;
   background: #3b5998 !important;
-  box-shadow: 0px 3px 0px #2c416e;
+  box-shadow: 0 3px 0 #2c416e;
 }
 
 .google {
@@ -161,5 +158,5 @@ a {
   margin-top: 15px;
   color: unset !important;
   background: #ffffff !important;
-  box-shadow: 0px 3px 0px #b93f31;
+  box-shadow: 0 3px 0 #b93f31;
 }
