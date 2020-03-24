@@ -11,13 +11,15 @@ class FacebookAndGoogle extends Component {
       fullName: "",
       email: "",
       profilePicture: "",
+      id: "",
     };
   }
 
   responseFacebook = (response) => {
     let name = response.name;
     let email = response.email;
-    let pic = response.picture.data.url;
+    let id = response.id;
+    let pic = `https://graph.facebook.com/${id}/picture?width=600&height=600`;
     this.setState({
       fullName: name,
       email: email,
@@ -30,7 +32,7 @@ class FacebookAndGoogle extends Component {
   responseGoogle = (response) => {
     let name = response.profileObj.name;
     let email = response.profileObj.email;
-    let pic = response.profileObj.imageUrl;
+    let pic = response.profileObj.imageUrl.replace("=s96-c", "");
     this.setState({
       fullName: name,
       email: email,
@@ -41,7 +43,7 @@ class FacebookAndGoogle extends Component {
   };
 
   componentClicked = () => {
-    console.log("Clicked!");
+    console.log("Facebook Login button clicked!");
   };
 
   getForm = () => {
